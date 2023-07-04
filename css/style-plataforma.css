@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#container .card {
+    position: relative;
+    padding: 10px 0 0 10px;
+    background-color: antiquewhite;
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace, sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#container .card::-webkit-scrollbar {
+    width: auto;
+}
+
+#container .card::-webkit-scrollbar-thumb {
+    background-color: green;
+}
+
+#container .card::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+#container button {
+    position: absolute;
+    bottom: -100px;
+    width: 300px;
+    height: 50px;
+    background-color: #054192;
+    border: 3px solid #00000041;
+    box-shadow: 5px 7px 3px #1682da3a;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 1em;
+    z-index: 1;
+    margin-left: -10px;
+}
