@@ -108,7 +108,7 @@ header img {
 }
 
 #comecar button {
-    margin-bottom: 10em;
+    margin-bottom: 3em;
 }
 
 section {
@@ -123,7 +123,7 @@ section h2 {
     letter-spacing: 3px;
     line-height: 1.6em;
     font-family: 'Fira Code', monospace, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -163,14 +163,23 @@ section img {
         font-size: 1.5em;
     }
 
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 2px 0 2px;
+    }
+
     section h2 {
-        width: 80vh;
-        font-size: 3em
+        font-size: 1em;
+        width: 40vw;
     }
 
     section p {
-        width: 80vh;
-        font-size: 1.5em;
+        font-size: .5em;
+        width: 40vw;
     }
 
     .buttons > button {
@@ -185,6 +194,9 @@ section img {
         font-size: 1em;
     }
 
+    #comecar button {
+        margin-bottom: 0;
+    }
 
 }
 
@@ -212,14 +224,31 @@ section img {
         height: 350px;
     }
 
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    section img {
+        width: 200px;
+        height: 200px;
+    }
+
     section h2 {
-        width: 80vw;
-        font-size: 3em
+        font-size: 1.5em;
+        width: 40vw;
     }
 
     section p {
-        width: 80vw;
-        font-size: 1.5em;
+        font-size: .5em;
+        width: 40vw;
+    }
+
+    #comecar button {
+        margin-bottom: 0;
     }
 }
 
@@ -246,19 +275,27 @@ section img {
         font-size: 1.5em;
     }
 
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     section h2 {
-        font-size: 3em;
-        width: 80vw;
+        font-size: 2em;
+        width: 30vw;
     }
 
     section p {
-        font-size: 2em;
-        width: 80vw;
+        font-size: 1em;
+        width: 30vw;
     }
 
     section img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .buttons > button {
@@ -271,5 +308,9 @@ section img {
         width: 300px;
         height: 40px;
         font-size: 1em;
+    }
+
+    #comecar button {
+        margin-bottom: 0;
     }
 }
