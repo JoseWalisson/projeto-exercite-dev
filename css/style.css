@@ -2,7 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Roboto&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    overflow-x: hidden;
     background: linear-gradient(to right, #004E74, #126601);
 }
 
@@ -19,10 +25,10 @@ body {
 header {
     font-family: 'Fira Code', monospace, sans-serif;
     position: relative;
-    margin: 1.5em 0 0 0em;
+    margin: 1.5em 0 0 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
 }
@@ -32,9 +38,10 @@ header #chamada {
 }
 
 header h1 {
+    margin: 1em 1em;
     letter-spacing: 3px;
     color: #fff;
-    font-size: 3em;
+    font-size: 1.5em;
     animation-name: texto-aparecer;
     animation-duration: 5s;
 }
@@ -43,12 +50,13 @@ header p {
     letter-spacing: 3px;
     line-height: 1.5em;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1em;
     animation-name: texto-aparecer;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 header img {
+    display: none;
     position: absolute;
     right: 70px;
     top: -50px;
@@ -70,7 +78,7 @@ header img {
     letter-spacing: 3px;
     font-size: 20px;
     cursor: pointer;
-    width: 300px;
+    width: 200px;
     height: 60px;
     border: 3px solid #00000041;
     border-radius: 30px;
@@ -89,11 +97,179 @@ header img {
     transition: .4s;
     cursor: pointer;
     letter-spacing: 3px;
-    width: 250px;
+    width: 200px;
     height: 40px;
     border-radius: 30px;
+    font-size: .6em;
 }
 
 .button-conhecer > button:hover {
     border: 3px solid #0000008c;
+}
+
+#comecar button {
+    margin-bottom: 10em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h2 {
+    color: #D9D9D9;
+    letter-spacing: 3px;
+    line-height: 1.6em;
+    font-family: 'Fira Code', monospace, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+section p {
+    font-family: 'Fira Code', monospace, sans-serif;
+    letter-spacing: 3px;
+    line-height: 2em;
+    color: #D9D9D9;
+    margin: 1em 1em;
+    text-align: center;
+    width: 80vw;
+    font-size: 1em;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        width: 80vh;
+        font-size: 3em
+    }
+
+    section p {
+        width: 80vh;
+        font-size: 1.5em;
+    }
+
+    .buttons > button {
+        width: 300px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .button-conhecer > button {
+        width: 300px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    header {
+        margin: 1.5em 0 1em 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header img {
+        display: flex;
+        right: -0px;
+        width: 350px;
+        height: 350px;
+    }
+
+    section h2 {
+        width: 80vw;
+        font-size: 3em
+    }
+
+    section p {
+        width: 80vw;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    header img {
+        display: flex;
+        right: -.2em;
+        width: 500px;
+        height: 500px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 3em;
+        width: 80vw;
+    }
+
+    section p {
+        font-size: 2em;
+        width: 80vw;
+    }
+
+    section img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .buttons > button {
+        width: 300px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .button-conhecer > button {
+        width: 300px;
+        height: 40px;
+        font-size: 1em;
+    }
 }
