@@ -37,7 +37,7 @@ header p {
 #container .card {
     position: relative;
     padding: 10px 0 0 10px;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     /* width: 350px; */
     width: 250px;
     /* height: 1050px; */
@@ -45,6 +45,7 @@ header p {
     border-radius: 20px;
     box-sizing: border-box;
     font-family: 'Fira Code', monospace, sans-serif;
+    transition: .4s;
 }
 
 #container p {
@@ -112,6 +113,7 @@ header p {
         width: 220px;
         height: 1750px;
     }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -136,6 +138,10 @@ header p {
         width: 280px;
         height: 1250px;
     }
+
+    #container .card:hover {
+        background-color: #20a505;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,5 +161,9 @@ header p {
     #container .card {
         width: 420px;
         height: 900px;
+    }
+
+    #container .card:hover {
+        background-color: #20a505;
     }
 }
