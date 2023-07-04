@@ -176,7 +176,6 @@ footer a {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    
     header {
         justify-content: flex-start;
         align-items: flex-start;
@@ -254,7 +253,6 @@ footer a {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-
     
     header {
         margin: 1.5em 0 1em 0;
@@ -264,11 +262,11 @@ footer a {
     }
 
     header h1 {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     header p {
-        font-size: 1em;
+        font-size: .8em;
     }
 
     header img {

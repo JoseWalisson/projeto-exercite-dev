@@ -10,6 +10,17 @@ header {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin: 4em 4em;
+}
+
+header h1 {
+    width: 90vw;
+    font-size: 1.5em;
+}
+
+header p {
+    width: 90vw;
+    font-size: 1em;
 }
 
 #container {
@@ -18,14 +29,17 @@ header {
     justify-content: center;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 #container .card {
     position: relative;
     padding: 10px 0 0 10px;
     background-color: antiquewhite;
-    width: 350px;
-    height: 1050px;
+    /* width: 350px; */
+    width: 250px;
+    /* height: 1050px; */
+    height: 1500px;
     border-radius: 20px;
     box-sizing: border-box;
     font-family: 'Fira Code', monospace, sans-serif;
@@ -39,7 +53,8 @@ header {
 #container button {
     position: absolute;
     bottom: 0;
-    width: 350px;
+    /* width: 350px; */
+    width: 250px;
     height: 50px;
     background-color: #054192;
     border: 3px solid #00000041;
@@ -71,4 +86,70 @@ header {
     list-style-type: none;
     font-size: 1em;
     padding: 0 10px 0 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #container {
+        gap: 20px;
+    }
+
+    #container button {
+        width: 220px;
+    }
+
+    #container .card {
+        width: 220px;
+        height: 1750px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    #container {
+        gap: 35px;
+    }
+
+    #container button {
+        width: 280px;
+    }
+
+    #container .card {
+        width: 280px;
+        height: 1250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 2.5em;
+    }
+
+    #container button {
+        width: 420px;
+    }
+
+    #container .card {
+        width: 420px;
+        height: 900px;
+    }
 }
