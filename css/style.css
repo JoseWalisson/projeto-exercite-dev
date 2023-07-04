@@ -33,10 +33,6 @@ header {
     text-align: center;
 }
 
-header #chamada {
-    margin-left: 3em;
-}
-
 header h1 {
     margin: 1em 1em;
     letter-spacing: 3px;
@@ -143,8 +139,30 @@ section img {
     height: 150px;
 }
 
+footer {
+    margin: 2em 2em;
+}
+
+footer h3 {
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.8em;
+    font-family: 'Fira Code', monospace, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #ffffff7e;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    
     header {
         justify-content: flex-start;
         align-items: flex-start;
@@ -198,10 +216,32 @@ section img {
         margin-bottom: 0;
     }
 
+    footer {
+        margin: 6em 2em;
+    }
+    
+    footer h3 {
+        letter-spacing: 3px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.8em;
+        font-family: 'Fira Code', monospace, sans-serif;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    footer a {
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: #ffffff7e;
+    }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
+    
     header {
         margin: 1.5em 0 1em 0;
         justify-content: flex-start;
@@ -250,6 +290,31 @@ section img {
     #comecar button {
         margin-bottom: 0;
     }
+
+    footer {
+        margin: 6em 2em;
+    }
+    
+    footer h3 {
+        letter-spacing: 3px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.8em;
+        font-family: 'Fira Code', monospace, sans-serif;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    footer a {
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: #ffffff7e;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -258,6 +323,10 @@ section img {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    header #chamada {
+        margin-left: 3em;
     }
 
     header img {
@@ -312,5 +381,30 @@ section img {
 
     #comecar button {
         margin-bottom: 0;
+    }
+
+    footer {
+        margin: 6em 2em;
+    }
+    
+    footer h3 {
+        letter-spacing: 3px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.8em;
+        font-family: 'Fira Code', monospace, sans-serif;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    footer a {
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: #ffffff7e;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
     }
 }
