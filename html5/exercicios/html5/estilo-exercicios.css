@@ -49,7 +49,8 @@ ol li {
     margin-bottom: 10px;
 }
 
-#container-button button {
+#container-button a, button {
+    text-decoration: none;
     text-align: center;
     box-shadow: 5px 7px 3px #19cf8334;
     background-color: #0A703E;
@@ -58,16 +59,29 @@ ol li {
     font-size: 20px;
     cursor: pointer;
     width: 300px;
-    height: 60px;
+    height: 50px;
     border: 3px solid #00000041;
     border-radius: 30px;
     transition: .3s;
 }
 
-.buttons > button:hover {
+.buttons > a:hover {
     border: 3px solid #0000008c;
 }
 
 footer {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+footer h3 {
+    color: #004E74;
+}
+
+footer a {
+    color: #008000;
+    text-decoration: none;
 }
